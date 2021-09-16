@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang = "en"?>
+
+
+<head>
+    <Title> Week4: cascading Style Sheets 1  </Title>
+    <!--Internal style sheet, just needs to be in the head  
+    We are referencing ul as the name of the unordered list 
+    we made below 20 min -->
+    <Link Rel= "stylesheet" href= "style.css"> 
+   
+</head>
+
+
+ <!--The top level style impacts everything below it, aka cascading 
+    but everything outisde of UL tags is normal. What we're doing below is 
+in line styling -->
+
+
+<body style= "color:blue" >
+
+    <section id ="top">
+
+        <h1>This is my header </h1>
+
+        <ul  style = "color: black">
+            <li>Coffee</li>
+            <li>Tea 
+                <ul>
+                    <li>Black</li>
+                    <li style= "color:Green" > Green</li>
+                </ul>
+            </li>
+            <li>Lemonade </li>
+        </ul>
+
+    </section>
+
+
+    <section id = "image">
+        <!--an image that is a link -->
+        <a href = "https://google.com"><img src="download.jpg"> </a>
+    </section>
+
+
+    <section id = "input">
+        <!--Form basics -->
+        <form>
+
+        <label for= "fname" style= "color:red" >First name:</label></br>
+        <input type="text" name = "fname"></br>
+        <input type= "radio" id="coffee" name= "coffee"><label for= "coffee">Coffee</label>
+        <input type= "radio" id="tea" name= "tea"><label for= "tea">Tea</label>
+        <input type= "radio" id="Water" name= "Water"><label for= "Water">Water</label></br>
+
+        <button id= "submit">Submit</button>
+
+        </form>
+
+        <a href="#top"><h1>Back to top </h1> </a>
+
+    </section>
+
+ 
+</body>
+
+</html>
