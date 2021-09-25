@@ -39,8 +39,11 @@ hr{
 }
 
 p{
-    margin: 0px 1200px 0px 10px; 
+    margin: 0px 1300px 0px 10px; 
 }
+
+/* This is done in a messy and inconvenient way, how do i fix this, is this 
+where I would use classes?  */
 
 #goals{
     font-family: "Inconsalata"; 
@@ -55,25 +58,13 @@ p{
     font-size: 20px; 
     font-weight: 500;
     border: solid #CFCAD6 6px ;
-    margin: 5px 10000px 0px 0px;
-    
+    margin: 5px 10000px 10px 10px;
 }
 
-#links{
-    font-size: 18px; 
-}
-
-a:link{
-    
-    color: #001FCC;
-}
-a:visited{
-    color: #6f85ff99;  /* how do i reset visited field */
-} 
- 
-a:hover{
-    color: #02147b;
-}
+#links { font-size: 18px }
+a:link { color: #001FCC; }
+a:visited { color: #6f85ff99;  /* how do i reset visited field */ } 
+a:hover { color: #02147b; }
 
 
 button{
@@ -84,4 +75,4 @@ button{
     margin: 10px;
     border-radius: 10px;
 }
-/* button hover?  */
+
