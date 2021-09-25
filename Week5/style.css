@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 100;
+    /* border: solid rgb(130, 20, 290) */
+    
+}
+
+h1{
+    /* lets add three properties  */
+    border: solid grey 40 px; /*what is this ? she said 
+    its good practice to  style by calling border and adding whatever you want in one line */ 
+}
+
+p {
+    color: rgb(100, 100, 100);
+}
+
+#second {
+    color: red;
+}
+.grey {
+    color: rgb(15, 120, 10)
+}
+
+hr{
+    border: dotted blue; 
+
+}
