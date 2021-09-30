@@ -1,7 +1,6 @@
 
   
   /*importing special font*/ 
-  
   @font-face {
   font-family:  myfirstfont; 
   src: url(assets/NHaasGroteskTXPro-55Rg.ttf)
@@ -12,67 +11,71 @@ body{
     font-family: myfirstfont;
 }
 
+
 #mytitle {
     font-family: myfirstfont;  
-    font-size: 50px;
+    font-size: 35px;
     padding: 5px 3px 0px 0px;
 }
 
-/* #mytitle{ 
-    border: solid #48f1ab 10px;
-        margin: 0px 10px 10px 15px; 
-        padding: 0px 100px 10px 10px; 
 
-} */
-
-
-h2{
+.headers {
     font-family: "Inconsalata"; 
-    font-weight: 100px;
-    font-size: 25px;
-    border: solid #48f1ab 6px ;
-    margin: 0px 10000px 10px 10px;
-}
+    margin: 0px 10000px 10px 10px;  
+    font-size: 17px;
+    }
+/* for font weight, try to specifcally target the header tag(s) because
+the sections already have so much stuff  */
 
-hr{
-    color: #E1E0E1;
-}
 
-p{
-    margin: 0px 1300px 0px 10px; 
+#who{
+    border: solid #48f1ab 6px; 
 }
-
-/* This is done in a messy and inconvenient way, how do i fix this, is this 
-where I would use classes?  */
 
 #goals{
-    font-family: "Inconsalata"; 
-    /* font-weight: 500; why wont this change! */
-    font-size: 20px;
-    border: solid #DEA903 6px ;
-    margin: 0px 10000px 10px 10px;
+    border: solid #DEA903 6px
 }
 
-#pastWork {
-    font-family: "Inconsalata";
-    font-size: 20px; 
-    font-weight: 500;
-    border: solid #CFCAD6 6px ;
-    margin: 5px 10000px 10px 10px;
+#pastwork{
+    border: solid #ACB9FF 6px; 
 }
+hr{
+ color: #E1E0E1;
+}
+
+
+p{
+    margin: 0px 950px 0px 10px; 
+    font-size: 13px;
+}
+
+ul{
+    margin: 0px 950px 0px -10px; 
+    font-size: 13px; 
+}
+
 
 #links { font-size: 18px }
 a:link { color: #001FCC; }
-a:visited { color: #6f85ff99;  /* how do i reset visited field */ } 
+a:visited { color: #6f85ff99;  /* "reset" visited field by force refreshing */ } 
 a:hover { color: #02147b; }
+
 
 
 button{
     background-color: #F4FF7A;
-    border: none;
-    font-size: 16px;
-    padding: 6px;
+    border: 1px solid #A0A37C;
+    font-size: 13px;
+    padding: 10px;
     margin: 10px;
-    border-radius: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 5px 7px 15px 1px #CFCAD6;
+    transition-duration: 0.3s;
 }
+
+
+button:hover {
+    background-color: #D7E639; 
+  }
 
