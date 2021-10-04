@@ -27,6 +27,9 @@ body{
 /* for font weight, try to specifcally target the header tag(s) because
 the sections already have so much stuff  */
 
+ul{
+    font-size: 14px;
+}
 
 #who{
     border: solid #48f1ab 6px; 
@@ -49,13 +52,12 @@ p{
     font-size: 13px;
 }
 
-ul{
-    margin: 0px 950px 0px -10px; 
-    font-size: 13px; 
+#links{
+    margin: 0px 950px 0px 12px; 
+    font-size: 14px; 
 }
 
 
-#links { font-size: 18px }
 a:link { color: #001FCC; }
 a:visited { color: #6f85ff99;  /* "reset" visited field by force refreshing */ } 
 a:hover { color: #02147b; }
@@ -65,7 +67,7 @@ a:hover { color: #02147b; }
 button{
     background-color: #F4FF7A;
     border: 1px solid #A0A37C;
-    font-size: 13px;
+    font-size: 14px;
     padding: 10px;
     margin: 10px;
     border-radius: 8px;
