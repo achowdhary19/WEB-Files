@@ -1,0 +1,50 @@
+body{
+    padding: 0px;
+}
+
+
+p{
+    color: red; /*just to mkae sure that style sheet is working and linked, 
+    early debugging practices  */
+    font-family: Helvetica;
+}
+
+
+
+h1, h2{
+    font-family: "Tinos"; 
+}
+
+
+#hero{ /*top section */ 
+    width: 100vw;
+    height: 60vw;
+    overflow: hidden; /*anything thats outside of the bounds, cut that of*/
+    margin: 0px; 
+    padding: 0px ;
+}
+
+
+#heroimg{ /* image */ 
+    width: 40vw; 
+    position: relative; /* i want my image postiion to be dependent on the 
+    position of the section that its in */ 
+     /*move the bottom fo the image up by 100 px */ 
+     bottom: 100px; 
+    margin: 0 0 0 41px;
+}
+
+#hero h1{
+    z-index: 1; /*front to back on website */ 
+    position: relative; 
+    font-size: 5vw; 
+    top: 30vh; 
+    margin: 0 0 0 50vw;  
+}
+
+
+#one, #two{
+    margin-left:  41px;
+    margin-right: 100px;
+
+}

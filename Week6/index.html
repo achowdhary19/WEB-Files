@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+    
+<head>
+    <title>Week 6 </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel= "stylesheet" href= "https://fonts.googleapis.com/css?family=Tinos"> 
+
+</head>
+
+<body>
+    
+    <section id= "hero">
+
+        <h1 id = "herotext"> Welcome to my site! </h1>
+        <!-- keep your header above your image for some bug reasons  -->
+        <img src="hero.png" alt="charm flowers" id= "heroimg">
+    </section>
+
+    <section id = "one">
+
+        <h2>This is my first section </h2>
+        <p>this is my filler text blah blahlab lhal blahl bla h </p>
+        <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups</p>
+    </section>
+
+    <section id = "two">
+        <h2>This is my second section </h2>
+        <p>Testing this section this will be my other filler text fo rthe section after the first one one LoremEspesijum </p>
+        <p>This is the second paragraph on the second section Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups</p>
+    </section>
+
+    <section id = "three">
+        <h2>This section contains a button </h2>
+        <button id = "mybutton"> Click this button</button>
+        <button id = "mybutton2"> Click this OTheR FUNNy button</button>
+
+    </section>
+
+
+<script> 
+
+    console.log("javascript working -_: "); /*to make sure javascript is working, pre debug 
+    go check inspect --> console */ 
+
+    document.getElementById("mybutton").addEventListener("click", function(){alert("you pushed the button!")});
+    /* id, call it something, add event listener, the event we are going to listen for is click, the thing we are going to do is add an alert */ 
+
+
+    /*reference function in a different location */ 
+    document.getElementById("mybutton2").addEventListener("click", buttonClicked);
+
+    function buttonClicked(){
+        alert( "you cheesed the job ")
+        /* ok, lets change the way the text renders in addition to the alert */ 
+        document.getElementById("herotext").innerHTML = "LOLOLOLOLO  "
+    }
+
+
+    /*you can also add a click event to anything in the document ( you can also change styling, not shown here ) */  
+    document.getElementById("hero").addEventListener("click", heroClick); 
+
+    function heroClick(){
+        alert("PLEase "); 
+    }
+
+
+
+</script>
+
+
+</body>
+
+
+</html>
