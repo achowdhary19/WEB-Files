@@ -1,0 +1,14 @@
+div{
+    background-color: pink; 
+}
+
+#pretty {
+    display: flex; /* horizontal tiling */ 
+}
+
+
+.options{
+    flex-grow: 1; 
+    width: auto; 
+    margin: 3vw; 
+}
