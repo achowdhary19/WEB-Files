@@ -1,0 +1,44 @@
+#tabs, #items{
+    display: flex;
+    
+    /* adding a margin to the overal/overarching container  */
+    margin: 10vh 10vw 0 10vw; 
+
+}
+
+#items{ 
+    
+    display: flex; 
+    margin: 0vh 10vw 0 10vw; 
+}
+
+
+.meal { /*flex box, we want ot put our headers in here, like name of meal  */
+    font-family: 'FavoritMed';
+    font-weight: 400;
+    flex-grow: 1; 
+    background-color: pink;
+    /* height: 100px;  */
+    width: auto;
+    border: 1px solid lightpink; 
+
+}
+
+#image, #menu{
+    flex-grow: 1; 
+    width: auto; 
+    height: 100px; 
+    background-color: lightgreen; 
+    border: 1px solid black; 
+
+
+}
+
+
+
+h2{
+    margin-top: 25px; 
+    padding-bottom: 0; 
+    font-size: 150% ;
+}
+

@@ -1,7 +1,5 @@
 console.log("hello world")
 
-
-
 // console.log(Math.floor(Math.random() *10)); /*get a random number between 0 and 1 */ 
 
 
