@@ -3,6 +3,7 @@
 <html lang = "en">
 
 <head>
+
     <title>myTool</title>
     <link rel="stylesheet" href="style.css">
     <link href="//db.onlinewebfonts.com/c/04c4a36facccf2d0906a0f1ed61036ef?family=FavoritMed" rel="stylesheet" type="text/css"/>
@@ -12,45 +13,33 @@
 </head>
 
 
-
-
 <body> 
 
-
-    <div id = "header ">
-        <img alt = "Glitter star gif" SRC="assets/glitterStar.gif" id = "icon">
-
-
-        <button id = "button" > Click me to display Date and Time.</button>
-
-
-    </div>
-
-    <section id = "flexcontainer">
+    <section id = "nav-bar">
         <div id = "tabs">
 
             <div id = "crafts">
                 <h2>
-                    <a href="assets/crafts.html">CRAFTS</a>
+                    <a class = "tabs" href="assets/crafts.html">CRAFTS</a>
                 </h2>
             </div>
 
 
             <div id = "reading">
                 <h2>
-                    <a href="assets/readings.html">READING</a>
+                    <a class = "tabs" href="assets/readings.html">READING</a>
                 </h2>
             </div>
 
             <div id = "pictures">
                 <h2>
-                    <a href="assets/pictures.html">PICTURES</a>
+                    <a class = "tabs" href="assets/pictures.html">PICTURES</a>
                 </h2>
             </div>
 
-            <div id = "recipes">
+            <div id = "recipes"> 
                 <h2>
-                    <a href="assets/recipes.html">RECIPES</a>
+                    <a class = "tabs" href="assets/recipes.html">RECIPES</a>
                 </h2>
             </div>
 
@@ -59,14 +48,54 @@
     </section>
 
 
+    <section id = "homepage">   <!--full flex container  -->
 
-    <h1>MyPage</h1>
+        
+        <div id = "header">
+            <div class = "left">
+                <img alt = "Glitter star gif" SRC="assets/glitterStar.gif" id = "icon">
+            </div>
+    
+            <div class= "left">
+                <h1>MyPage</h1>
 
-        <p>
-            This is filler text. This will be the the home page. I will put some information that explains what the website is and/or introduce myself! Maybe I will make the home page a sort of blog that I update. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+                <p>
+                    Welcome to my tool! This is my version of pinterest/are.na. Each tab serves as a board or block that I populate with images that I like or that I want to engage with in the future. I'm looking forward to adding to this website over time! Click the star if you want to have a good time.  
+                
+                </p>
 
-    <script type="text/javascript" src="index.js"></script>
+            </div>
+    
+            <!-- <div id = "date">
+                <button id = "button" > Click me to display Date and Time.</button>
+            </div> -->
 
+        </div>
+
+        <div id = "mypastwork">
+
+            <h2>My past work </h2>
+
+            
+            <div class id = "links">
+                <a class = "pastworklinks" href="/Week%201%20/Lab1/index.html">Week 1</a>
+                <br>
+                <a class = "pastworklinks" href="/Week%202/Assignment/index.html">Week 2 </a>
+                <br>
+                <a class = "pastworklinks" href="/Week3/PatternLibrary-10-4.pdf">Week 3</a>
+                <br>
+                <a class = "pastworklinks" href="/Week4/index.html">Week 4</a>
+                <br>
+                <a class = "pastworklinks" href="/Week5/index.html">Week 5</a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <script src="index.js"></script>
+    <!-- <script href="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
 </body>
 </html>
