@@ -1,4 +1,15 @@
 
+@font-face{
+    font-family: 'FavoritMed';
+    src:  url('assets/Favorit\ Medium.ttf'); 
+}
+
+@font-face{
+    font-family: "Favorit"; 
+    src: url("assets/Favorit\ Light.ttf")
+}
+
+
 #icon{
     width: 100px; 
     margin: 0 0 0 2.5vw; 

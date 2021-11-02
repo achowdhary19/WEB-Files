@@ -46,7 +46,6 @@ for (i = 0; i < document.getElementsByClassName("craft").length; i++) {
 
 
 
-
 //READING PAGE 
 const readingimages = ["book1.jpg", "book2.jpg", "book3.jpg", "book4.jpg"]
 
