@@ -11,6 +11,7 @@ console.log("hello world")
 
 
 const images = ["cosmos.jpg", "sky.jpg", "snow.jpg"]
+const title = ["cosmos.jpg", "sky.jpg", "snow.jpg"]
 
 
 for (i = 0; i < document.getElementsByClassName("options").length; i ++ ){/* or you can do by < 3 if its simple like ours rn */ 
@@ -19,7 +20,18 @@ for (i = 0; i < document.getElementsByClassName("options").length; i ++ ){/* or 
     /*this is adding all the images, but i haven't gotten it to work */ 
     
     
+    document.getElementsByClassName("options")[i].setAttribute("id", title[i]);
+
+  //call changeColor with the ID of the section when clicked
+    document.getElementsByClassName("options")[i].addEventListener("click", function(){changeColor(this.id)});
     
     // document.getElementsByClassName("options")[i].innerHTML += '<img src= "assets/cosmos.jpg">' /*any inner html stuff is in quotations */ 
     // /*this line just adds one picture to each flex box 
 }
+
+function changeColor(sectionID){
+    console.log(sectionID);
+    document.getElementById(sectionID).classList.toggle("blue");
+  }
+
+
