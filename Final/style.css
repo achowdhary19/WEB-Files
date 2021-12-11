@@ -1,0 +1,193 @@
+
+
+
+h1{
+    margin: 50px 10px 20px 3vw; 
+}
+
+
+body{
+    background-color: #E7DDCC;
+}
+
+.grid-container img:hover{
+    transform: scale(1.1);
+} 
+
+
+.grid-container {
+    border: 1px solid black;
+    display: grid;
+     /* top right bottom left  */
+    margin: 0px 3vw 10vw 3vw;
+    padding: 0px;
+
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 10vw);
+  }
+
+.grid-container > figure {  /* WHY DOES THIS WORK  */
+    border: 1px solid black;
+    padding: 0px; 
+    margin: 0px;
+}
+
+.grid-container img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+
+/* NESTED GRID FOR BEADS  */
+.beadBox{
+    /* border: 1px solid black; */
+    display: grid;
+    margin: 0px;
+    padding: 0px;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 3vw);
+    grid-area: 1 / 2 / 3 / 3; 
+}
+
+.beadBox > figure {
+    /* border: 1px solid black; */
+    padding: 0px; 
+    margin: 0px; 
+}
+
+.beadBox img{
+    max-width: 125%;
+    max-height: 125%;
+    object-fit: contain;
+}
+
+.item1{
+    grid-column-start: 1 ;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    /* the box is rotated rather than the image.  */
+    transform:rotate(330deg);
+}
+
+.item2{
+    grid-area: 1 / 4 / 2 / 5; 
+    transform:rotate(35deg);
+}
+.item2 img{
+    margin: 20px 0px 0px 35px;
+}
+
+
+
+
+/* BEAD STYLING  */
+.item3{
+    grid-column-start: 1 ;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3; 
+/* grid area wont work here for some reason  */
+}
+
+.item4{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2; 
+}
+
+.item4 img{
+    margin-left: 30px;
+    margin-top: 7px;
+}
+
+
+.item6 img{
+    margin: 0px 0px 10px 16px ;
+}
+
+.item7 img{
+    margin-top: -10px;
+}
+
+.item9 img{
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.item11 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 6; 
+} 
+.item11 img{
+    width: 80%;
+    height: 80%;
+}
+
+.item11-1 img{
+    width: 125%; 
+    height: 125%;
+}
+
+.item11-2 img{
+    margin: 0px 0px 0px 20px;
+}
+
+.item11-3 img{
+    margin: 20px 0px 0px -25px;
+}
+
+.item11-4 img{
+    margin-top: -13px;
+    width: 125%;
+    height: 125%;
+}
+
+/* END OF BEAD GRID  */
+
+
+.item12 {
+    grid-area: 1 / 5 / 2 / 7;
+    /* transform:rotate(30deg);  */
+} 
+
+ .item12 img{
+    margin: 50px 0px 0px 50px;
+    transform:rotate(30deg);
+}  
+
+
+ .item13 {
+    grid-area: 1 / 6 / 3 / 7;
+    transform:rotate(7deg);
+     /* width: 40%; */
+} 
+
+ .item13 img{
+    margin: 0px 0px 0px 50px;
+} 
+
+
+.item17{
+    grid-area: 3 / 2 / 4 / 4;
+    transform:rotate(-30deg);
+}
+
+.item18{
+    grid-area: 3 / 4 / 5 / 5;
+}
+
+.item18 img {
+    margin-top: 30px;
+}
+
+
+.item19 {
+    grid-area: 3 / 5 / 5 / 6;
+}
