@@ -75,6 +75,10 @@ document.getElementById("hook").addEventListener("click",function(){
   sound1.play();
 })
 
+document.getElementById("circle").addEventListener("click",function(){
+  sound1.play();
+})
+
 
 // CROCHET BOY
 let n = 0;
@@ -83,4 +87,43 @@ document.getElementById("crochetboy").addEventListener("click", function(){
   document.querySelectorAll("img")[n].src = "assets/crochetBoy.png";
   n++; 
 });
+
+
+// C MAJOR SCALE 
+let c = new Audio("assets/C.wav");
+document.getElementById("orange1").addEventListener("click", function(){
+  c.play();
+})
+
+let d = new Audio("assets/D.wav"); 
+let e = new Audio("assets/E.wav");
+let f = new Audio("assets/F.wav");
+let g = new Audio("assets/G.wav");
+let a = new Audio("assets/A.wav");
+let b = new Audio("assets/B.wav");
+
+document.getElementById("purple1").addEventListener("click", function(){
+  d.play();
+})
+
+document.getElementById("blue1").addEventListener("click", function(){
+  e.play();
+})
+
+document.getElementById("pink1").addEventListener("click", function(){
+  f.play();
+})
+
+document.getElementById("purple2").addEventListener("click", function(){
+  g.play();
+})
+
+document.getElementById("green1").addEventListener("click", function(){
+  a.play();
+})
+
+document.getElementById("yellow1").addEventListener("click", function(){
+  b.play();
+})
+
 
