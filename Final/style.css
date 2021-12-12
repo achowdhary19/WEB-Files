@@ -2,21 +2,22 @@
 
 
 h1{
-    margin: 50px 10px 20px 3vw; 
+    margin: 50px 10px 40px 3vw; 
 }
 
 
 body{
     background-color: #E7DDCC;
+    background-size: cover;
 }
 
-.grid-container img:hover{
-    transform: scale(1.1);
-} 
+.button{
+    margin: 0px 0px 20px 3vw;
+}
 
 
 .grid-container {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: grid;
      /* top right bottom left  */
     margin: 0px 3vw 10vw 3vw;
@@ -27,7 +28,7 @@ body{
   }
 
 .grid-container > figure {  /* WHY DOES THIS WORK  */
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding: 0px; 
     margin: 0px;
 }
@@ -72,19 +73,40 @@ body{
     /* the box is rotated rather than the image.  */
     transform:rotate(330deg);
 }
+.item1 img:hover {
+    transform: scale(1.1);
+}
 
 .item2{
     grid-area: 1 / 4 / 2 / 5; 
-    transform:rotate(35deg);
+    transform:rotate(45deg);
 }
 .item2 img{
-    margin: 20px 0px 0px 35px;
+    margin: 0px 0px 0px 15px;
+}
+.item2 img:hover {
+    transform: scale(1.3);
 }
 
+.item2.spin {
+    animation:spin 4s linear infinite;
+}
+@keyframes spin {
+    50% {
+        transform: rotate(360deg)
+    }
+    100% {
+        transform: rotate(0deg)
+    }
+}
 
 
 
 /* BEAD STYLING  */
+.beadBox img:hover {
+    transform: scale(1.1);
+}
+
 .item3{
     grid-column-start: 1 ;
     grid-column-end: 3;
@@ -154,13 +176,16 @@ body{
 
 .item12 {
     grid-area: 1 / 5 / 2 / 7;
-    /* transform:rotate(30deg);  */
+    transform:rotate(30deg); 
 } 
 
  .item12 img{
-    margin: 50px 0px 0px 50px;
-    transform:rotate(30deg);
-}  
+    margin: 110px 0px 0px 100px;
+    transform: scale(2.5);
+} 
+.item12 img:hover{
+    transform: scale(2.8);
+} 
 
 
  .item13 {
@@ -168,15 +193,53 @@ body{
     transform:rotate(7deg);
      /* width: 40%; */
 } 
-
  .item13 img{
-    margin: 0px 0px 0px 50px;
+    margin: 50px 0px 0px 80px;
+    transform: scale(1.5);
 } 
+.item13 img:hover{
+    transform: scale(1.7)
+}
 
+
+
+.item14 img{
+    margin: 40px 0px 0px 50px;
+    transform: scale(2);
+}
+.item14 img:hover{
+    transform: scale(2.2);
+}
+
+
+.item15 img{
+    margin: 0px 0px 0px 50px;
+    transform: scale(.5);
+}
+.item15 img:hover{
+    transform: scale(.6);
+}
+
+
+.item16 {
+    transform:rotate(15deg);  
+}
+
+.item16 img{
+    transform: scale(2.5);
+    margin: 0px 0px 0px 40px;
+}
+.item16 img:hover{
+    transform: scale(2.7);
+}
 
 .item17{
     grid-area: 3 / 2 / 4 / 4;
-    transform:rotate(-30deg);
+    transform:rotate(-10deg);
+}
+
+.item17 img:hover{
+    transform: scale(1.1);
 }
 
 .item18{
@@ -184,10 +247,55 @@ body{
 }
 
 .item18 img {
-    margin-top: 30px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.item18 img:hover{
+    transform: scale(1.2);
 }
 
 
 .item19 {
     grid-area: 3 / 5 / 5 / 6;
+    transform: rotate(50deg);
+}
+.item19 img{
+    margin: 0px 0px 0px 100px;
+    transform: scale(1.3);
+}
+.item19 img:hover{
+    transform: scale(1.5);
+}
+
+
+.item20 img{
+    transform: scale(1.2);
+    margin: 90px 0px 0px 45px;
+}
+
+.item20 img:hover{
+    transform: scale(1.3);
+}
+
+.item21 img{
+    margin-left: 30px;
+}
+.item21 img:hover{
+    transform: scale(1.2);
+}
+
+.item22 {
+    grid-area: 4 / 3 / 5 / 4;
+    transform: rotate(10deg);
+}
+
+.item22 img{
+    transform: scale(1.8);
+    margin: -21px 0px 0px 121px;
+
+}
+
+.item22 img:hover{
+    transform: scale(2);
 }
