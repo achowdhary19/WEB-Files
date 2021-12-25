@@ -1,18 +1,12 @@
-const colors = ["#001FCC", "#FD611F", "#05A556", "#111111", "#E0B507", "#E7DDCC", "#CFCAD6" ]
+// const colors = ["#ff0000", "#ffa500", "#ffff00", "#0000ff", "#4b0082", "#ee82ee"]
 
-i = 0; 
-document.getElementById("h1").addEventListener("click", function(){
-    document.body.style.color = colors[i];
+// i = 0; 
+// document.getElementById("h1").addEventListener("click", function(){
+//     document.body.style.color = colors[i];
   
-    i = (i + 1) % colors.length;
+//     i = (i + 1) % colors.length;
     
-     // === 
-
-    // i ++ ; 
-    // if (i >= colors.length) {
-    //   i = 0
-    // }
-});
+// });
 
 
 

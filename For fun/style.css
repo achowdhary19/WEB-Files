@@ -1,29 +1,121 @@
-/* //QUINN  */
 
-
-h1{
-    /* color: #C05AA4; */
-    margin: 50px 10px 20px 3vw; 
+@font-face{
+    font-family: Antar; 
+    src: url("assets/antar/antar.ttf");
 }
+
 
 
 body{
     background-image: url("assets/hammerhead.jpg");
     background-size: 10%;
-
-}
-
-.grid-container{
-    /* border: 1px solid black;  */
-    display: grid; 
-    margin: 20px 3vw 10vw 3vw;
+    margin: 0px;
     padding: 0px;
-    
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(5, 30vw);  
 }
 
-.grid-container > figure { 
+
+
+/* SIDE BANNER  */
+.header-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(25, 5vw); 
+
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ABADB0;
+    overflow-x: hidden;
+    font-family:  "Antar", "Favorit", cursive;
+}
+
+.header-container div{
+    /* border: 1px solid black;  */
+    padding: 0px;
+    margin: 0px; 
+    object-fit: contain;
+
+    position: relative;
+}
+
+ 
+#quinn{
+    grid-area: 1 / 2 / 9 / 4;
+    padding-top: 0px;
+    padding-left: 15px;
+    transform: scale(.87);
+} 
+
+
+#link-grid{
+    /* border: 1px solid black; */
+    display: grid;
+    margin: 0px;
+    padding-top: 90px;
+
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 3vw);
+    grid-area: 8 / 1 / 12 / 5; 
+}
+
+/* dont think i need this section, i can't tell what its doing  */
+ #link-grid div{
+    /* border: 1px solid black; */
+    object-fit: contain;
+}
+
+#link-grid img:hover{
+    transform: scale(.67);
+}
+
+
+ #spotify{
+     padding-left: 48px;
+     padding-top: 14px;
+     grid-area: 1 / 2 / 5 / 3;
+ } 
+
+ #spotify img{
+    transform: scale(.6);
+ }
+
+
+ #soundcloud{
+     padding-right: 55px;
+     grid-area: 1 / 4 / 5 / 5;
+ }
+ #soundcloud img{
+    transform: scale(.6);
+ }
+
+
+ #applem{
+     grid-area: 1 / 3 / 5 / 4;
+     padding-left: -2px;
+ }
+ #applem img{
+     transform: scale(.6);
+ }
+
+/* SIDE BANNER END  */
+
+
+
+
+/* MAIN  */
+.grid-container {
+    display: grid; 
+    /* border: 1px solid black; */
+    margin: 0px;
+    padding: 0px; 
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 30vw); 
+}
+
+.grid-container > figure { /*make the albums visible and  centered */
     /* border: 1px solid blue; */
     margin-left: auto;
     margin-right: auto;
@@ -35,3 +127,5 @@ body{
     max-height: 100%;
     object-fit: cover;
 }
+
+
