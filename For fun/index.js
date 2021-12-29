@@ -1,13 +1,20 @@
-// const colors = ["#ff0000", "#ffa500", "#ffff00", "#0000ff", "#4b0082", "#ee82ee"]
 
-// i = 0; 
-// document.getElementById("h1").addEventListener("click", function(){
-//     document.body.style.color = colors[i];
+
+
+let sound1 = new Audio("assets/Conga.wav");
+document.getElementById("spotify").addEventListener("click",function(){
+  sound1.play();
+})
+
+document.getElementById("applem").addEventListener("click",function(){
+    sound1.play();
+  })
   
-//     i = (i + 1) % colors.length;
-    
-// });
+
+document.getElementById("soundcloud").addEventListener("click",function(){
+sound1.play();
+})
 
 
-
+let sound2 = new Audio("assets/HouseHit.wav");
 
