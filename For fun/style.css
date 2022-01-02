@@ -1,4 +1,29 @@
 
+@media screen and (max-width: 700px){ /*this is the styling that i want to apply on screens smaller than 700 px */
+    .header-container{
+        width: 18vw !important;
+    }
+    body #quinn{
+        transform: scale(.7) ;
+        grid-area: 1 / 1 / 12 / 4 ;
+    }
+    
+    .grid-container img{
+        transform: scale(1.5);
+    }  
+    
+    .grid-container{
+        row-gap: 35px;
+    }
+
+    body #link-grid{
+        grid-area: 23/ 1 / 24 / 3  ;
+        margin: 5px 0px 0px -36px;
+        padding: 0;
+    }
+   
+
+}
 
 
 body{
@@ -15,7 +40,7 @@ body{
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(25, 5vw); 
+    grid-template-rows: repeat(35, 5vw); 
 
     height: 100%;
     width: 14vw;
@@ -51,17 +76,18 @@ body{
 #link-grid{
     /* border: 1px solid white; */
     display: grid;
-    margin: 0px;
-    padding-top: 6vw;
+    margin-left:  12px;
+    padding-top: 15vh;
+    
 
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(4, 3vw);
     grid-area: 8 / 1 / 12 / 5; 
 }
 
 /* dont think i need this section, i can't tell what its doing  */
  #link-grid div{
-    /* border: 1px solid black; */
+    /* border: 1px solid white; */
     object-fit: contain;
 }
 

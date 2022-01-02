@@ -1,24 +1,33 @@
 
-
-
 h1{
     margin: 50px 10px 20px 3vw; 
 }
 
 
 body{
-    background-color: #E7DDCC;
+    background-color: #d8cdba;
     background-size: cover;
 }
 
-#button{
-    margin: 0px 0px 10vw 3vw;
-    border: 1px solid black ;
-    padding: 7px;
-    background-color: #E1E0E1;
+button{
+    cursor: pointer;
+    margin: 0px 0px 0 3vw;
+    border: .5px solid #DAD9D9 ;
+    border-radius: 25px;
+    padding: 10px;
+    box-shadow: 0 4px #999;
+    background-color: #DAD9D9;
     color: #001FCC;
 }
+button:hover{
+    background-color: #CECECE;
+    border: .5px solid #CECECE ;
 
+}
+button:active {
+    box-shadow: 0 0px #999;
+    transform: translateY(3px);
+  }
 
 .grid-container {
     /* border: 1px solid black; */
