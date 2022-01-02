@@ -18,3 +18,19 @@ sound1.play();
 
 let sound2 = new Audio("assets/HouseHit.wav");
 
+document.getElementById("album").addEventListener("click",function(){
+  sound2.play();
+  })
+
+document.getElementById("album2").addEventListener("click",function(){
+  sound2.play();
+  })
+    
+
+document.getElementById("album3").addEventListener("click",function(){
+  sound2.play();
+  })
+
+document.getElementById("album4").addEventListener("click",function(){
+  sound2.play();
+  })
