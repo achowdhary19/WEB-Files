@@ -27,11 +27,16 @@
 }
 
 
+
 body{
     background-image: url("assets/hammerhead.jpg");
     background-size: 10%;
     margin: 0px;
     padding: 0px;
+}
+
+#album2{
+    transform: scale(1.5);
 }
 
 
