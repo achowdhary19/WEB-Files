@@ -4,7 +4,7 @@
 document.getElementById("chew").addEventListener("click", helloWorld);
 
 function helloWorld() {
-  alert ("Hello World!");
+  alert ("Arfas little world");
 }
 
 
@@ -127,3 +127,45 @@ document.getElementById("yellow1").addEventListener("click", function(){
 })
 
 
+
+//OPEN SKETCH BOOk
+// let sound3 = new Audio("assets/pageFlip.mp3");
+
+
+// document.getElementById("journal").addEventListener("click", function(){
+//   document.getElementById("journal").src = "assets/openjournal.png";
+//   sound3.play();
+// })
+
+
+
+
+document.getElementById("journal").addEventListener("click", changePic());
+var image_tracker = "journal";
+
+
+function changePic(){
+  var image = document.getElementById("journal");
+  if (image_tracker == "journal"){
+    image.src= "assets/openjournal.png";
+    image_tracker = "open";
+  }
+  else if (image_tracker == "open"){
+    image.src = "assets/journal.png";
+    image_tracker = "journal";
+    console.log(image_tracker);
+  }
+}
+
+
+
+document.getElementById("mushroom").addEventListener("click", function(){
+  document.getElementById("overlay").style.display = "block";
+  ocument.getElementById("mushroom").style.display = "inline";
+})
+
+
+
+// function off() {
+//   document.getElementById("overlay").style.display = "none";
+// }

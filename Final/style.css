@@ -1,3 +1,18 @@
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black; /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+
+
 
 h1{
     margin: 50px 10px 20px 3vw; 
@@ -7,6 +22,7 @@ h1{
 body{
     background-color: #d8cdba;
     background-size: cover;
+    
 }
 
 button{
@@ -250,6 +266,11 @@ button:active {
     transform:rotate(-10deg);
 }
 
+.item17 img{
+    margin-top: -35px;
+    margin-left: 10px;
+}
+
 .item17 img:hover{
     transform: scale(1.1);
 }
@@ -291,7 +312,8 @@ button:active {
 }
 
 .item21 img{
-    margin-left: 30px;
+    margin-top: -30px;
+    margin-left: -7px;
 }
 .item21 img:hover{
     transform: scale(1.2);
@@ -308,5 +330,18 @@ button:active {
 }
 
 .item22 img:hover{
+    transform: scale(2);
+}
+
+.item23 {
+    grid-area: 4 / 1 / 5 / 2;
+    transform: rotate(-20deg);
+}
+
+.item23 img{
+    transform: scale(1.4);
+    margin: 10px 0 10px 100px;
+}
+.item23 img:hover{
     transform: scale(2);
 }
