@@ -181,7 +181,6 @@ function lightsOut(){
 
 
 //FIELD 
-
 let birds = new Audio("assets/birds.mp3")
 document.getElementById("mushroom").addEventListener("click", function(){
   document.body.style.backgroundImage = "url('assets/field.png')";
