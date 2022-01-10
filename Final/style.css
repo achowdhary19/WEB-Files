@@ -8,7 +8,7 @@
     right: 0;
     bottom: 0;
     background-color: black; /* Black background with opacity */
-    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    z-index: 3; /* Specify a stack order in case you're using a different order for other elements */
     cursor: pointer; /* Add a pointer on hover */
   }
 
@@ -20,6 +20,7 @@ h1{
 
 
 body{
+    z-index: 2;
     background-color: #d8cdba;
     background-size: cover;
     
@@ -110,7 +111,7 @@ button:active {
     transform:rotate(45deg);
 }
 .item2 img{
-    margin: 0px 0px 0px 15px;
+    margin: -52px 0px 0px 28px;
 }
 .item2 img:hover {
     transform: scale(1.3);
@@ -216,6 +217,7 @@ button:active {
 } 
 
 
+
  .item13 {
     grid-area: 1 / 6 / 3 / 7;
     transform:rotate(7deg);
@@ -232,7 +234,7 @@ button:active {
 
 
 .item14 img{
-    margin: 40px 0px 0px 50px;
+    margin: 9px 0px 0px 56px;
     transform: scale(1.7);
 }
 .item14 img:hover{
@@ -276,16 +278,17 @@ button:active {
 }
 
 .item18{
-    grid-area: 3 / 4 / 5 / 5;
+    grid-area: 4 / 3 / 5 / 4;
+    transform: rotate(-15deg);
 }
 
 .item18 img {
-    margin-top: 10px;
-    margin-left: 20px;
+    margin-top: -45px;
+    transform: scale(1.4);
 }
 
 .item18 img:hover{
-    transform: scale(1.2);
+    transform: scale(1.6);
 }
 
 
@@ -311,6 +314,9 @@ button:active {
     transform: scale(1.3);
 }
 
+.item21 {
+    z-index: 4;
+}
 .item21 img{
     margin-top: -30px;
     margin-left: -7px;
@@ -318,15 +324,19 @@ button:active {
 .item21 img:hover{
     transform: scale(1.2);
 }
+.item21:active{
+    transform: translateY(5px);
+}
 
 .item22 {
-    grid-area: 4 / 3 / 5 / 4;
+
+    grid-area: 3 / 4 / 4 / 5;
     transform: rotate(10deg);
 }
 
 .item22 img{
     transform: scale(1.8);
-    margin: -21px 0px 0px 121px;
+    margin: 67px 0px 20px 62px;
 }
 
 .item22 img:hover{

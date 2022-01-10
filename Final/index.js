@@ -12,7 +12,7 @@ function helloWorld() {
 document.getElementById("hand").addEventListener("click", animate);
 function animate(){
     setInterval(function(){
-      document.getElementById("hand").style.WebkitTransitionDuration=".5s";
+      document.getElementById("hand").style.WebkitTransitionDuration=".25s";
       document.getElementById("hand").style.transform = 'rotate(240deg)'; } , 1000)
 }
 
@@ -20,10 +20,12 @@ function animate(){
 
 
 // CHANGE BACKGROUND COLOR 
+let paint = new Audio("assets/paintbucket!.mov");
 const colors = ["#001FCC", "#FD611F", "#05A556", "#111111", "#E0B507", "#E7DDCC", "#CFCAD6" ]
 i = 0; 
-document.getElementById("flower").addEventListener("click", function(){
+document.getElementsByClassName("item18")[0].addEventListener("click", function(){
     document.body.style.backgroundColor = colors[i];
+    paint.play();
   
     i = (i + 1) % colors.length;
     
@@ -74,8 +76,7 @@ document.getElementById("pencil").addEventListener("click",function(){
 document.getElementById("hook").addEventListener("click",function(){
   sound1.play();
 })
-
-document.getElementById("circle").addEventListener("click",function(){
+document.getElementById("flower").addEventListener("click",function(){
   sound1.play();
 })
 
@@ -128,9 +129,10 @@ document.getElementById("yellow1").addEventListener("click", function(){
 
 
 
-//OPEN SKETCH BOOk
-// let sound3 = new Audio("assets/pageFlip.mp3");
 
+
+//OPEN SKETCH BOOk
+let sound3 = new Audio("assets/pageFlip.mp3");
 
 // document.getElementById("journal").addEventListener("click", function(){
 //   document.getElementById("journal").src = "assets/openjournal.png";
@@ -139,13 +141,12 @@ document.getElementById("yellow1").addEventListener("click", function(){
 
 
 
-
-document.getElementById("journal").addEventListener("click", changePic());
+document.getElementById("journal").addEventListener("click", changePic);
 var image_tracker = "journal";
-
 
 function changePic(){
   var image = document.getElementById("journal");
+  sound3.play();
   if (image_tracker == "journal"){
     image.src= "assets/openjournal.png";
     image_tracker = "open";
@@ -159,13 +160,32 @@ function changePic(){
 
 
 
+//LIGHTS OUT 
+let sound4 = new Audio("assets/lightSwitchCrop.mov");
+document.getElementById("circle").addEventListener("click", lightsOut);
+
+var lightsOn = true; 
+function lightsOut(){
+  sound4.play();
+
+  if (lightsOn){
+    document.getElementById("overlay").style.display = "block";
+    lightsOn = false; 
+  }
+
+  else{
+   document.getElementById("overlay").style.display = "none";
+   lightsOn = true; 
+  }
+}
+
+
+//FIELD 
+
+let birds = new Audio("assets/birds.mp3")
 document.getElementById("mushroom").addEventListener("click", function(){
-  document.getElementById("overlay").style.display = "block";
-  ocument.getElementById("mushroom").style.display = "inline";
+  document.body.style.backgroundImage = "url('assets/field.png')";
+  document.body.style.backgroundPosition = "center";
+  birds.play();
+
 })
-
-
-
-// function off() {
-//   document.getElementById("overlay").style.display = "none";
-// }
