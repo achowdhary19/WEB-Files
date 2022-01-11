@@ -208,7 +208,7 @@ function changePic(){
   if (image_tracker == "journal"){
     image.src= "assets/openjournal.png";
     image_tracker = "open";
-    image.style.filter =  "blur(.20px)";
+    image.style.filter =  "blur(.13px)";
   }
   else if (image_tracker == "open"){
     image.src = "assets/journal.png";
