@@ -208,7 +208,7 @@ function changePic(){
   if (image_tracker == "journal"){
     image.src= "assets/openjournal.png";
     image_tracker = "open";
-    image.style.filter =  "blur(.13px)";
+    image.style.filter =  "blur(.05px)";
   }
   else if (image_tracker == "open"){
     image.src = "assets/journal.png";
@@ -258,7 +258,8 @@ document.getElementsByClassName("item19")[0].addEventListener("click", function(
   document.getElementById("sharpen").style = "filter: blur(13px)";
   document.getElementsByTagName("button")[0].style = "filter: blur(5px)";
   document.getElementsByTagName("p")[0].style = "filter: blur(5px)";
-  }
+  document.backgroundImage.style = "filter:blue(5px)";
+}
 })
 
 
