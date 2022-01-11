@@ -1,3 +1,12 @@
+@media screen and (max-width: 750px){
+    body #body{
+       background-size: 100% 240%;
+       background-repeat: no-repeat;
+    };
+}
+
+
+
 #overlay {
     position: fixed; /* Sit on top of the page content */
     display: none; /* Hidden by default */
@@ -12,7 +21,11 @@
     cursor: pointer; /* Add a pointer on hover */
   }
 
-
+p{
+    z-index: 0;
+    grid-area: 1 / 1 / 7 / 7 ;
+    position: fixed;
+}
 
 h1{
     margin: 50px 10px 20px 3vw; 
@@ -22,6 +35,11 @@ h1{
 body{
     z-index: 2;
     background-color: #d8cdba;
+    background-size: cover;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     
 }
@@ -332,6 +350,7 @@ button:active {
 
     grid-area: 3 / 4 / 4 / 5;
     transform: rotate(10deg);
+    
 }
 
 .item22 img{
@@ -355,3 +374,5 @@ button:active {
 .item23 img:hover{
     transform: scale(2);
 }
+
+
