@@ -258,7 +258,7 @@ document.getElementsByClassName("item19")[0].addEventListener("click", function(
   document.getElementById("sharpen").style = "filter: blur(13px)";
   document.getElementsByTagName("button")[0].style = "filter: blur(5px)";
   document.getElementsByTagName("p")[0].style = "filter: blur(5px)";
-  document.backgroundImage.style = "filter:blue(5px)";
+  // document.body.backgroundImage.style = "filter:blue(5px)";
 }
 })
 
