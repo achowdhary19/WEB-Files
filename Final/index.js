@@ -213,6 +213,7 @@ function changePic(){
   else if (image_tracker == "open"){
     image.src = "assets/journal.png";
     image_tracker = "journal";
+    image.style.filter =  "blur(0px)";
     console.log(image_tracker);
   }
 }
