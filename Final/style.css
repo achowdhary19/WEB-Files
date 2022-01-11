@@ -364,7 +364,6 @@ button:active {
 .item23 img{
     transform: scale(1.6);
     margin: 10px 0 10px 100px;
-    filter: blur(.27px);
 }
 .item23 img:hover{
     transform: scale(2);
