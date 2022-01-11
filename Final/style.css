@@ -1,6 +1,7 @@
 @media screen and (max-width: 750px){
     body{
         background-size: cover;
+        background-repeat: no-repeat;
     };
 }
 
@@ -34,8 +35,7 @@ body{
     z-index: 2;
     background-color: #d8cdba;
     background-size: 100%;
-  
-    
+     
 }
 
 button{
